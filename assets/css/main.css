@@ -10,6 +10,15 @@
     display: flex;
 } */
 
+header {
+    background-color: black;
+}
+
+.logo{
+    line-height: 0;
+    max-height: 30px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 15% 35% 35% 15%;
@@ -23,7 +32,6 @@
     left: 0px;
     top: 80px;
     background: rgba(46, 47, 47, 0.65);
-    
 }
 
 .grid-container h1{
@@ -40,19 +48,17 @@
 /* H's */
 h2{
     font-family: montserrat,sans-serif;
-}
-
-.section-header {
-    margin-top: 5%;
-}
-
-.section-header h2{
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
     color: #fff !important;
+    text-align: center;
+}
+
+.section-header {
+    margin-top: 5%;
 }
 
 .section-header h2:after {
@@ -74,9 +80,120 @@ h2{
   --------------------------------------------------------------*/
 
   .sobre-nos{
-    border-color: #340354 !important;
+    border-color: #340354;
     align-items: center;
 }
+
+
+.team .memberNew {
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: #DE5614; */
+    /* background: linear-gradient(109.31deg, rgba(255, 255, 255, 0.5) 10.78%, rgba(217, 217, 217, 0.5) 81.24%); */
+    /* background: none; */
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    height: 260px;
+    width: 200px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.team .memberNew .social {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    border-radius: 5px;
+}
+
+.team .memberNew .social a {
+    transition: all 0.3s ease 0s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background: none;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.team .memberNew .social a:hover {
+    border: 2px solid #D2008B;
+}
+
+.team .memberNew .social i {
+    font-size: 18px;
+    margin: 0 2px;
+    background: none;
+}
+
+.team .memberNew h4 {
+    background: none;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color: #fff;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.team .memberNew span {
+    background: none;
+    /* background-color: gray; */
+    font-style: italic;
+    display: block;
+    font-size: 14px;
+    color: #ffffffc5;
+    border-radius: 5px;
+}
+
+.team .memberNew img {
+    height: 120px;
+    border-radius: 15px;
+}
+
+/* Ajuste da posição do card de membro */
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 
 
   /*--------------------------------------------------------------
