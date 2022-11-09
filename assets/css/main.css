@@ -45,22 +45,63 @@ header {
     grid-row: 3/5;
 }
 
+/* Caixas de texto */
+.caixa-texto1 {
+  height: 300px;
+  width: auto;border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background:rgba(144, 255, 60, 0.4);
+}
+.caixa-texto2{
+  height: 300px;
+  width: auto;border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background:#D2008B;
+  
+}
+.caixa-texto3{
+  height: 300px;
+  width: auto;
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background:#DE5614;
+}
+
+.g-4, .gy-4 {
+  --bs-gutter-y: 1.5rem;
+  background: none;
+}
+
+
 /* H's */
 h2{
     font-family: montserrat,sans-serif;
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     position: relative;
-    color: #fff !important;
+    color: #fff;
     text-align: center;
 }
 
 .section-header {
     margin-top: 5%;
 }
-
+/*
 .section-header h2:after {
     content: "";
     position: absolute;
@@ -72,7 +113,7 @@ h2{
     right: 0;
     bottom: 0;
     margin: auto;
-  }
+  } */
 
 
 /*--------------------------------------------------------------
@@ -184,7 +225,7 @@ h2{
     max-width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
+     margin-top: var(--bs-gutter-y);  
     display: flex;
     align-content: center;
     justify-content: space-around;
