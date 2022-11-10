@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap-styles.css">
 
     <!-- Icone da aba -->
-    <link rel="shortcut icon" href="./assets/Imagens/Contador_Visitantes_Logo-Branca.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/Imagens/favicon-senac/favicon.ico" type="image/x-icon">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
                     <img src="./assets/Imagens/Contador_Visitantes_Logo-Branca.png" alt="Bootstrap" width="130px">
                   </a>
                 <a class="navbar-brand" href="#">
-                    <img class="logo" src="./assets/Imagens/header-logo.png" alt="Bootstrap" width="200px">
+                    <img class="logo" src="./assets/Imagens/Senac no Rec'n'Play 2022.png" alt="Bootstrap" width="200px">
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -45,16 +45,16 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Início</a>
+                      <a class="nav-link" aria-current="page" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Movimento Manguebeat</a>
+                      <a class="nav-link" href="#contador">O Contador de Visitantes</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Sobre nós</a>
+                      <a class="nav-link" href="#sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Senac no Rec’n’Play 2022 - Projetos</a>
+                      <a class="nav-link" href="#">Senac no Rec'n'Play 2022 - Projetos</a>
                     </li>
                   </ul>
                 </div>
@@ -73,7 +73,9 @@
       <section>
         <!-- Início -->
         <section class="team">
+          <a name="inicio"></a>
           <div class="container sobre-nos ">
+            
             <div class="section-header">
               <h2>Início</h2>
               <div class="cx cx-1"></div>
@@ -85,15 +87,55 @@
           </div>
         </section>
 
-        <!-- O movimento manguebeat -->
+        <!-- O Contador de Visitantes -->
         <section class="team">
+          <a name="contador"></a>
           <div class="container sobre-nos ">
+            
             <div class="section-header">
-              <h2>O Movimento Manguebeat</h2>
+              <h2>O Contador de Visitantes</h2>
               <div class="cx cx-2"></div>
             </div>
             <div class="caixa-texto2">
+                <div class="col-sm-7">
+                  <!-- Carousel -->
+                  <div class="carousel slide" data-bs-ride="carousel">
+                    <!-- The slideshow/carousel -->
+                    <div id="demo" class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/Imagens/Carrossel/Casa Zero (1).jpg" alt="Los Angeles" class="d-block">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/Imagens/Carrossel/Casa Zero (2).jpg" alt="New York" class="d-block">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/Imagens/Carrossel/Circuito (2).jpg" alt="New York" class="d-block">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/Imagens/Carrossel/Desenvolvimento (1).jpg" alt="New York" class="d-block">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/Imagens/Carrossel/Desenvolvimento (2).jpg" alt="New York" class="d-block">
+                      </div>
 
+                      <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                  </div>
+                    <!-- The end slideshow/carousel -->
+                </div>
+                
+              <div class="col-sm-5">
+                <div class="texto">
+                  <p>O projeto Contador de Visitante tem o cunho e o objetivo de  estimular e mostrar o aprendizado voltado para a área de tecnologia, trabalhando com sensores e placas de arduino, tecnologias web.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -102,7 +144,7 @@
         <section class="team">
           <div class="container sobre-nos ">
             <div class="section-header">
-              <h2>Sobre Nós</h2>
+              <h2>Sobre Nós<a name="sobre"></a></h2>
               
               <div class="cx cx-3"></div>
             </div>
@@ -114,7 +156,7 @@
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
                     <h4>
-                      Teste</h4>
+                      Caio Ferreira</h4>
                     <span>Scrum Master/Lider Team</span>
                     <div class="social">
                       <a href="#" target="_blank"><i class="bi bi-github"></i></a>
@@ -127,7 +169,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Paes</h4>
+                    <h4>Davi Freitas</h4>
                     <span>Front-End Developer/Tester</span>
                     <div class="social">
                       <a href="#" target="_blank"><i class="bi bi-github"></i></a>
@@ -140,7 +182,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Anila</h4>
+                    <h4>David Montenegro</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -153,7 +195,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Silva</h4>
+                    <h4>Elias Kevyn</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -166,7 +208,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Samira</h4>
+                    <h4>Francyelle Azevedo</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -179,7 +221,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Vanessa</h4>
+                    <h4>Gabriela Maria</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -192,7 +234,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Camila</h4>
+                    <h4>Geovanna Gizella</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -205,7 +247,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Caio</h4>
+                    <h4>Hugo Antunes</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -218,7 +260,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Samira</h4>
+                    <h4>Izabelly Tainan</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -231,7 +273,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Vanessa</h4>
+                    <h4>Lacê Renê</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -244,7 +286,7 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Camila</h4>
+                    <h4>Maiara Evelyn</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
@@ -257,12 +299,38 @@
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="memberNew">
                     <img src="./assets/Imagens/Membros/user.png" alt="">
-                    <h4>Caio</h4>
+                    <h4>Matheus Santana</h4>
                     <span>Front-End Developer</span>
                     <div class="social">
                       <a href="#"><i class="bi bi-github"></i></a>
                       <a href="#"><i class="bi bi-instagram"></i></a> <!-- Perguntar se quer -->
                       <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Team Member -->
+    
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                  <div class="memberNew">
+                    <img src="./assets/Imagens/Membros/user.png" alt="">
+                    <h4>Ranyelle dos Santos</h4>
+                    <span>Front-End Developer</span>
+                    <div class="social">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a> <!-- Perguntar se quer -->
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Team Member -->
+    
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                  <div class="memberNew">
+                    <img src="./assets/Imagens/Membros/Thiago.png" alt="">
+                    <h4>Thiago Brito</h4>
+                    <span>Front-End Developer</span>
+                    <div class="social">
+                      <a href="https://github.com/BritoThiag0" target="_blank"><i class="bi bi-github"></i></a>
+                      <a href="https://www.instagram.com/thiagobrito03/" target="_blank"><i class="bi bi-instagram"></i></a> <!-- Perguntar se quer -->
+                      <a href="https://www.linkedin.com/in/thiago-brito-cassimiro-da-silva-a50ba214b/" target="_blank"><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div><!-- End Team Member -->
@@ -276,69 +344,68 @@
     </main>
 
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        
-      <div class="container-fluid">
-        
-        <div class="row gy-4">
-          <!-- Footer da faculdade-->
-          <div class="col-lg-5 col-md-12 footer-info">
-            <span class=" logo d-flex align-items-center footer-text">Faculdade Senac</span>
-            <div class="social-links d-flex mt-4">
-              <a href="https://www.instagram.com/senacpe/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/senacpe/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-            </div>
+  <footer id="footer" class="footer">
+    
+    <div class="container-fluid">
+      
+      <div class="row gy-4">
+        <!-- Footer da faculdade-->
+        <div class="col-lg-5 col-md-12 footer-info">
+          <span class=" logo d-flex align-items-center footer-text">Faculdade Senac</span>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/senacpe/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/senacpe/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
+        </div>
 
-          <div class="col-lg-2 col-6 footer-links" style="margin-top: 70px;">
-            <h4 class="orange-color-light">Links Utilizáveis</h4>
-            <ul>
-              <li><a href="#">O Music Box</a></li>
-              <li><a href="#">O Manguebeat</a></li>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="https://faculdadesenacpe.edu.br/" target="_blank">Site Faculdade Senac-PE</a></li>
-              <li><a href="#" target="_blank">Site Oficial Senac no Rec'N'Play</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-6 footer-links" style="margin-top: 70px;">
-            <h4 class="orange-color-light">Endereço</h4>
-            <p style="opacity: 70%; margin-top: -10px;">
-              <i class="bi bi-geo-alt"></i> Rua Marquês do Pombal, 57 <br>
-              CEP 50100-170 <br>
-              Santo Amaro – Recife/PE <br>
-            </p>
-            <h4 class="orange-color-light">Telefone:</h4> <p style="opacity: 70%; margin-top: -10px;"><i class="bi bi-telephone"></i> 0800 081 1688</p>
-          </div>
-
-          <!-- Footer do rec n play -->
-          <div class="col-lg-5 col-md-12 footer-info">
-            <span class="footer-text logo d-flex align-items-center" style="border-bottom: 4px solid #D2008B;">Rec'n'Play</span>
-            <div class="social-links d-flex mt-4" >
-              <a href="https://www.instagram.com/recnplayfestival/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/rec-n-play/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="https://twitter.com/recnplay_br" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
-            </div>
+        <div class="col-lg-2 col-6 footer-links" style="margin-top: 70px;">
+          <h4 class="orange-color-light">Links Utilizáveis</h4>
+          <ul>
+            <li><a href="#">O Music Box</a></li>
+            <li><a href="#">O Manguebeat</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="https://faculdadesenacpe.edu.br/" target="_blank">Site Oficial</a></li>
+            <li><a href="#" target="_blank">Site Oficial Senac no Rec'N'Play</a></li>
+          </ul>
         </div>
         <div class="col-lg-2 col-6 footer-links" style="margin-top: 70px;">
-            <h4 class="orange-color-light">Endereço</h4>
-            <p style="opacity: 70%; margin-top: -10px;">
-              <i class="bi bi-geo-alt"></i> Rua do Bom Jesus, 227 <br>
-              CEP: 50030-170 <br>
-              Recife/PE <br>
-              Proximo ao Paço do Frevo
-            </p>
-            </div>
-
-      <div class="container mt-4">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Faculdade Senac</span></strong>. All Rights Reserved
+          <h4 class="orange-color-light">Endereço</h4>
+          <p style="opacity: 70%; margin-top: -10px;">
+            <i class="bi bi-geo-alt"></i> Rua Marquês do Pombal, 57 <br>
+            CEP 50100-170 <br>
+            Santo Amaro – Recife/PE <br>
+          </p>
+          <h4 class="orange-color-light">Telefone:</h4> <p style="opacity: 70%; margin-top: -10px;"><i class="bi bi-telephone"></i> 0800 081 1688</p>
         </div>
-      </div>
-      </div>
-      </div>
 
-    </footer>
-    <!-- End Footer -->
+        <!-- Footer do rec n play -->
+        <div class="col-lg-5 col-md-12 footer-info">
+          <span class="footer-text logo d-flex align-items-center" style="border-bottom: 4px solid #D2008B;">Rec'n'Play</span>
+          <div class="social-links d-flex mt-4" >
+            <a href="https://www.instagram.com/recnplayfestival/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/rec-n-play/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/recnplay_br" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+          </div>
+      </div>
+      <div class="col-lg-2 col-6 footer-links" style="margin-top: 70px;">
+          <h4 class="orange-color-light">Endereço</h4>
+          <p style="opacity: 70%; margin-top: -10px;">
+            <i class="bi bi-geo-alt"></i> Rua do Bom Jesus, 227 <br>
+            CEP: 50030-170 <br>
+            Recife/PE <br>
+            Proximo ao Paço do Frevo
+          </p>
+          </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Faculdade Senac</span></strong>. All Rights Reserved
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </footer><!-- End Footer -->
     
 
     <!-- Bootstrap JavaScript Libraries -->
