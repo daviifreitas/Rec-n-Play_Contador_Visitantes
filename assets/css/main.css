@@ -5,11 +5,8 @@
     color: #fff;
 }
 
-/* .container {
-    position: relative;
-    display: flex;
-} */
 
+/* Header */
 header {
     background-color: black;
 }
@@ -45,18 +42,109 @@ header {
     grid-row: 3/5;
 }
 
-/* Caixas de texto */
-.caixa-texto1 {
-  height: 300px;
-  width: auto;border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  /* background:rgba(144, 255, 60, 0.4); */
-  background-color: #DE5614;
+/* Parte do nome */
+.caixa-contador-geral{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    background: none;
+    flex-wrap: nowrap;
+    align-content: center;
 }
+
+.caixa-contador-geral .caixa-texto1 {
+  width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(144, 255, 60, 0.4); */
+    /* background-color: #DE5614; */
+    position: relative;
+    height: 330px;
+    margin: 15px;
+    background: rgba(222, 86, 20, 0.8);
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.caixa-contador-geral .caixa-texto1 p{
+  background: none;
+  font-weight: 400px;
+}
+
+.caixa-contador-geral .caixa-texto1 .nome-preenchivel{
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: none;
+  text-shadow: 1px 1px 2px black, 0 0 25px #90FF3C, 0 0 5px #90FF3C;
+  color: #FFFFFF;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* box-sizing: border-box; */
+}
+
+.caixa-contador-geral .caixa-texto1 .nome-preenchivel p{
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  /* font-size: 100px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: none;
+  text-shadow: 1px 1px 2px black, 0 0 25px #90FF3C, 0 0 5px #90FF3C;
+  color: #FFFFFF;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
+}
+
+.caixa-contador-geral .caixa-texto1 .bemVindo{
+  background: none;
+  text-decoration: none;
+}
+
+.caixa-textoNum{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+    height: 330px;
+    width: auto;
+    position: relative;
+    background: rgba(222, 86, 20, 0.8);
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.caixa-textoNum .col-lg-3 p{
+  background: none;
+  /* font-size: clamp(1em, 1em + 1vw, 1.5em); */
+}
+
+.caixa-textoNum .col-lg-8 p{
+  background: none;
+}
+
+/* Texto nos blocos superiores */
+
+
+
 .caixa-texto2{
   height: 500px;
   width: auto;
@@ -68,6 +156,7 @@ header {
   padding: 10px;
   background-color:#ef8048;
 }
+
 .caixa-texto3{
   height: 300px;
   width: auto;
@@ -124,6 +213,32 @@ h2{
 
 .col-sm-5 {
   background: none;
+}
+
+.col-lg-3 {
+  background: none;
+  color: #fff;
+  width: 80px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+
+.col-lg-8 {
+  background: none;
+  color: #fff;
+  width: auto;
+  font-weight: 800;
+  font-size: 120px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .texto {
