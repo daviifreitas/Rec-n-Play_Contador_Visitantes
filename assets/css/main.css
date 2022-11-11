@@ -54,7 +54,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background:rgba(144, 255, 60, 0.4);
+  /* background:rgba(144, 255, 60, 0.4); */
+  background-color: #DE5614;
 }
 .caixa-texto2{
   height: 500px;
@@ -65,7 +66,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background:#ef8048;
+  background-color:#ef8048;
 }
 .caixa-texto3{
   height: 300px;
@@ -96,9 +97,13 @@ header {
 .carousel-item .d-block{
   border-radius: 20px;
   width:100%;
-  max-height: 450px;
+  /* max-height: 450px; */
+  height: 450px;
   background: none;
   justify-content: center;
+  /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0); */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* H's */
@@ -113,23 +118,32 @@ h2{
     text-align: center;
 }
 
+.col-sm-7 {
+  background: none;
+}
+
+.col-sm-5 {
+  background: none;
+}
+
 .texto {
-  background: #fff;
-  height: 450px;
-  margin-left: 5px;
-  padding: 10px;
+  height: 250px;
   border-radius: 20px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .texto p{
   background: none;
-  color: #000;
+  color: #fff;
+  font-weight: 400;
   text-align: justify;
   align-items: center;
   display: flex;
-  height: 450px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section-header {
