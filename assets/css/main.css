@@ -9,6 +9,7 @@
 /* Header */
 header {
     background-color: black;
+    margin-bottom: 70px;
 }
 
 .logo{
@@ -50,14 +51,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
     background: none;
     flex-wrap: nowrap;
     align-content: center;
 }
 
 .caixa-contador-geral .caixa-texto1 {
-  width: 100%;
+    width: 100%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -288,6 +288,32 @@ h2{
     align-items: center;
 }
 
+.team{
+  /*DIMINUI A DISTANCIA ENTRE AS SECTIONS*/
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* CAIXA DA FOTO DO GRUPO */
+.team .caixa-team{
+  position: relative;
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  height: 444px;
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.team .caixa-team img{
+  border-radius: 15px;
+  height: 400px;
+}
 
 .team .memberNew {
     position: relative;
