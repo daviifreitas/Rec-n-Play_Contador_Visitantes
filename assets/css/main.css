@@ -1,9 +1,10 @@
 @import url("./faixa.css");
 @import url("./letreiro.css");
+@import url("./rainbow.css");
 
 
 * {
-    background-color: #000;
+    background: #000;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@
 
 /* Header */
 header {
-    background-color: black;
+    background: black;
     margin-bottom: 70px;
     
 }
@@ -54,14 +55,13 @@ header {
     padding: 15px;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     /* background: none; */
     flex-wrap: wrap;
     align-content: center;
     position: relative;
-    display: block;
     text-align: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -99,63 +99,92 @@ header {
   /* color: #FFFFFF; */
 }
 
-.caixa-contador-geral .caixa-texto1 .bemVindo{
-  background: none;
-  text-decoration: none;
-  position: relative;
-  color: #fff;
-  margin-bottom: 0;
 
-}
-
-.caixa-textoNum{
+.caixa-contador-geral .caixa-textoNum{
   display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 5px;
-    height: 330px;
-    width: auto;
-    position: relative;
-    background: rgba(222, 86, 20, 0.8);
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-content: center;
-    flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  width: 50%;
+  height: auto;
+  position: relative;
+  /* background: rgba(222, 86, 20, 0.8); */
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.caixa-textoNum .row-cols-lg-3 p{
+/* .caixa-contador-geral .caixa-textoNum .c-rainbow {
   background: none;
-  /* font-size: clamp(1em, 1em + 1vw, 1.5em); */
-}
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.1);
+} */
 
-.caixa-textoNum .row-cols-lg-8 p{
-  background: none;
-}
 
 /* Texto nos blocos superiores */
 
 
 
 .caixa-texto2{
-  height: 500px;
-  width: auto;
+  height: 100%;
+  width: 100%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color:#ef8048;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.col-sm-8 {
+  background: none;
+}
+
+.col-sm-4 {
+  background: none;
+}
+
+.col-sm-4 .texto {
+  height: 100%;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.texto p{
+  background: none;
+  color: #fff;
+  font-weight: 400;
+  text-align: justify;
+  align-items: center;
+  display: flex;
 }
 
 .caixa-texto3{
   height: 300px;
-  width: auto;
+  width: fit-content;
   border-radius: 15px;
   display: flex;
-  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -166,10 +195,14 @@ header {
 /* Carrossel */
 .carousel {
   background: none;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-inner{
   background: none;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item {
@@ -181,11 +214,13 @@ header {
   width:100%;
   /* max-height: 450px; */
   height: 450px;
+  display: flex;
   background: none;
   justify-content: center;
   /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0); */
   border-radius: 10px;
   overflow: hidden;
+  object-fit:fill;
 }
 
 /* H's */
@@ -201,18 +236,21 @@ h2{
     background: none;
 }
 
-.col-sm-7 {
-  background: none;
+h3{
+    font-family: montserrat,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: none;
 }
 
-.col-sm-5 {
-  background: none;
-}
 
 .col-lg-3 {
   background: none;
   color: #fff;
-  width: 80px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   text-align: center;
@@ -222,7 +260,7 @@ h2{
 .col-lg-8 {
   background: none;
   color: #fff;
-  width: auto;
+  width: 100%;
   font-weight: 800;
   font-size: 120px;
   display: flex;
@@ -235,25 +273,6 @@ h2{
   flex-direction: column;
 }
 
-.texto {
-  height: 250px;
-  border-radius: 20px;
-  position: relative;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.texto p{
-  background: none;
-  color: #fff;
-  font-weight: 400;
-  text-align: justify;
-  align-items: center;
-  display: flex;
-}
 
 .section-header {
     margin-top: 5%;
@@ -306,7 +325,13 @@ h2{
 
 .team .caixa-team img{
   border-radius: 15px;
-  height: 400px;
+  height: 100%;
+  min-height: 300px;
+  max-height: 1200px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 1600px;
+  object-fit: fill;
 }
 
 .team .memberNew {
@@ -383,6 +408,8 @@ h2{
 
 .team .memberNew img {
     height: 120px;
+    width: 140px;
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -550,3 +577,4 @@ h2{
     margin-top: 10px;
     margin-bottom: 50px;
   }
+
