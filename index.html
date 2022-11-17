@@ -100,13 +100,9 @@
               <div class="caixa-textoNum">
                 <h3>Passaram por aqui</h3>
                 <ul class="c-rainbow">
-                  <li class="c-rainbow__layer c-rainbow__layer--white">0</li>
-                  <!-- <li class="c-rainbow__layer c-rainbow__layer--orange">0</li>
-                  <li class="c-rainbow__layer c-rainbow__layer--red">0</li>
-                  <li class="c-rainbow__layer c-rainbow__layer--violet">0</li>
-                  <li class="c-rainbow__layer c-rainbow__layer--blue">0</li>
-                  <li class="c-rainbow__layer c-rainbow__layer--green">0</li>
-                  <li class="c-rainbow__layer c-rainbow__layer--yellow">0</li> -->
+                  <div id="teste" class="c-rainbow">
+
+                  </div>
                  </ul>
               </div>
               
@@ -489,4 +485,21 @@
     <!-- Template Javascript -->
     <script src="./assets/js/main.js"></script>
 </body>
+
+<script>
+  setInterval(function(){
+    $.ajax({
+      url : "https://apicountrecnplay.azurewebsites.net/register/getdata",
+      type : "GET",
+      contentType : "application/json",
+      success: function(resultAsJson){
+        console.log(resultAsJson);
+        var amountOfVisitors = resultAsJson.amount;
+        var htmlForUpdate = '<li class="c-rainbow__layer c-rainbow__layer--white">'+amountOfVisitors+'</li>';
+        $('#teste').html(htmlForUpdate);
+      }
+    })
+  },60000)
+</script>
+
 </html>
